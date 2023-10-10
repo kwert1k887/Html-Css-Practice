@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/style/main.css">
 </head>
 <body>
-    <div class="market">
+    <main class="market">
         <header>
             <img src="assets/images/svg/logo.svg" alt="logo">
             <div class="exit">
@@ -24,105 +24,105 @@
                 </svg>
             </div>
         </header>
-        <div class="box">
-            <div class="block">
+        <section class="box">
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
-            </div>
-            <div class="block">
+            </article>
+            <article class="block">
                 <img src="assets/images/png/ecola.png" alt="ecola">
-                <p>ECOLA</p>
-                <a>Вкусный напиток</a>
+                <h1>ECOLA</h1>
+                <p>Вкусный напиток</p>
                 <div class="price">
                     <span>$50.00</span>
                 </div>
                 <button>Приобрести</button>
+            </article>
+        </section>
+        <aside>
+            <div id="bannersContainer">
+                <img class="banners" :src="currentImage" :key="currentImage" alt="banners">
             </div>
-        </div>
-        <div id="app">
-            <transition name="fade">
-                <img class="banners" :src="currentImage" :key="currentImage" alt="">
-            </transition>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        </aside>
+    </main>
+    <script src="https://unpkg.com/vue@next"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

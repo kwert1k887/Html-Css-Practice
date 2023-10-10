@@ -91,7 +91,7 @@ header img {
     height: 11.483253588516746vh;
 }
 
-.block p {
+.block h1 {
     position: absolute;
     bottom: 9.569377990430622vh;
     left: 1.5311004784688995vh;
@@ -100,9 +100,9 @@ header img {
     color: black;
 }
 
-.block a {
+.block p {
     position: absolute;
-    bottom: 9.665071770334928vh;
+    bottom: 8.9vh;
     left: 1.5311004784688995vh;
     font-size: 1.3397129186602872vh;
     font-weight: 500;

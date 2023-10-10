@@ -1,12 +1,13 @@
-new Vue({
-    el: '#app',
-    data: {
-        currentImageIndex: 0,
-        images: [
-            'assets/images/png/banners/1.png',
-            'assets/images/png/banners/2.png',
-            'assets/images/png/banners/3.png'
-        ]
+const app = Vue.createApp({
+    data() {
+        return {
+            currentImageIndex: 0,
+            images: [
+                'assets/images/png/banners/1.png',
+                'assets/images/png/banners/2.png',
+                'assets/images/png/banners/3.png'
+            ]
+        }
     },
     computed: {
         currentImage() {
@@ -16,7 +17,7 @@ new Vue({
     mounted() {
         this.startSlideshow();
     },
-    beforeDestroy() {
+    beforeUnmount() {
         clearInterval(this.timer);
     },
     methods: {
@@ -24,7 +25,9 @@ new Vue({
             this.timer = setInterval(() => {
                 this.currentImageIndex =
                     (this.currentImageIndex + 1) % this.images.length;
-            }, 6000); // меняем картинку каждые 10 секунды
+            }, 6000); 
         }
     }
 });
+
+app.mount("#bannersContainer");
